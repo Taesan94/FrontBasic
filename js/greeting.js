@@ -18,6 +18,7 @@ function saveName(text){
 }
 
 function askForName(){
+	greeting.innerText='';
 	form.classList.add(SHOWING_CN);
 	form.addEventListener("submit",handleSubmit);
 }
@@ -44,3 +45,5 @@ function loadName(){
 function init() {
 	loadName();
 }
+
+init();
